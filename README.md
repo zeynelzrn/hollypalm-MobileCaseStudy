@@ -1,5 +1,7 @@
 # Holly Palm – Shopify Ürün Detay
 
+**Repository:** [https://github.com/zeynelzrn/hollypalm-MobileCaseStudy](https://github.com/zeynelzrn/hollypalm-MobileCaseStudy)
+
 Flutter, Riverpod ve GraphQL ile Clean Architecture prensiplerine uygun, Shopify Storefront API tabanlı tek ürün detay sayfası. Döküman gereksinimleriyle uyumlu, modern animasyonlar ve tutarlı UX kararlarıyla tasarlanmıştır.
 
 ## Mimari yaklaşım ve dosya yapısı
@@ -11,9 +13,20 @@ Flutter, Riverpod ve GraphQL ile Clean Architecture prensiplerine uygun, Shopify
 
 ## Kurulum
 
+**Gereksinim:** [Flutter SDK](https://docs.flutter.dev/get-started/install) kurulu olmalıdır.
+
 ```bash
+# Repoyu klonladıktan sonra proje klasörüne girin, ardından:
 flutter pub get
 ```
+
+## Çalıştırma
+
+```bash
+flutter run
+```
+
+(Emülatör veya fiziksel cihaz bağlı olmalıdır; `flutter devices` ile listelenir.)
 
 ## Yapılandırma
 
@@ -83,8 +96,7 @@ Veri kaynaklı kısıtlamayı ve UI mantığını doğrulamak için şu yönteml
 - **Fallback test:** Varyant görseli null veya ana görselle aynıysa, `displayImages` listesinin ilk sırasına geçici bir placeholder URL (ör. picsum) konur. Varyant değiştirildiğinde bu placeholder’ın görünmesi, state ve carousel güncellemesinin doğru çalıştığını kanıtlar.
 - **Key / Logic check:** Carousel’a `ValueKey(product.id)` verilir; varyant değişiminde `selectedVariantIndex` ve `displayImages` güncellenir, gerekirse seçim anında konsola yazılarak senkronizasyon doğrulanır.
 
-## Çalıştırma
+## Teslim
 
-```bash
-flutter run
-```
+- **GitHub repository:** [https://github.com/zeynelzrn/hollypalm-MobileCaseStudy](https://github.com/zeynelzrn/hollypalm-MobileCaseStudy)
+- **README** ve **kurulum/çalıştırma adımları** bu dosyada yer almaktadır.
